@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;0,700;0,800;1,400&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: rgb(19, 230, 159);
+}
+html,button{
+    font-size: 62.5%;
+    text-transform: capitalize;
+}
+input::-webkit-inner-spin-button{
+    display: none;
+}
+input::-webkit-outer-spin-button{
+    display: none;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20rem;
+}
+.container{
+    background-color: rgba(255, 255, 255, 0.842);
+    max-width: 50rem;
+    min-height: 31rem;
+    width: 100%;
+    height: 100%;
+    border-radius: .5rem;
+    box-shadow: 0 0 .8rem rgba(0, 0, 0, 0.185);
+    margin: 1rem;
+}
+.container .header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.301);
+}
+.container .header h2{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.container .question{
+    margin-left: 1rem;
+margin-top: .8rem;
+margin-bottom: 1rem;
+}
+.container .question p{
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.container .getNumber{
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+}
+.container .getNumber label{
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.container .getNumber  input{
+    outline: none;
+    border: transparent;
+    background-color: white;
+    height: 2.5rem;
+    border-radius: .3rem;
+    padding-left: .4rem;
+}
+.container .getNumber .actionButton button{
+    background-color: rgba(17, 252, 134, 0.836);
+    border: none;
+    height: 2.5rem;
+    margin-left: 0.5rem;
+    width: 6rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: .3rem;
+    cursor: pointer;
+}
+.container .getNumber .actionButton button:active{
+    transform: scale(.97);
+}
+.container .hint-container
+{
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.185);
+    background-color: rgba(236, 236, 236, 0.911);
+    height: 20rem;
+    margin: .5rem;
+    border-radius: .5rem;
+    margin-top: 1.5rem;
+}
+.container .hint-container .hint-line{
+    display: flex;
+    justify-content: center;
+    margin-top: .8rem;
+    align-items: center;
+}
+.container .hint-container .hint-line p{
+font-size: 1.4rem;
+margin-top: 1rem;
+font-weight: 600;
+}
+.container .hint-container .hint-line .hint{
+    color: blueviolet;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+.container .hint-container .guess-life{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 16rem;
+    flex-direction: column;
+}
+.container .hint-container .guess-life p{
+    font-size: 2rem;
+    font-weight: 700;
+
+}
+.container .hint-container .guess-life .pop{
+    animation-name: pop;
+    animation-duration: .4s;
+    animation-iteration-count: 1;
+}
+@keyframes  pop{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.container .hint-container .guess-life button{
+    background-color: rgba(17, 252, 134, 0.836);
+    border: none;
+    height: 2.5rem;
+    margin-left: 0.5rem;
+    width: 6rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: .3rem;
+    cursor: pointer;
+    margin-top: 3rem;
+}
+.container .hint-container .guess-life button:active{
+    transform: scale(.97);
+}
+.refresh{
+display: none;
+}
+@media only screen and (max-width:27.5em) {
+    .container .hint-container .guess-life p{
+        font-size: 1.5rem;
+        font-weight: 700;
+    
+    }
+}
